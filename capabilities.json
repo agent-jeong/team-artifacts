@@ -1,0 +1,13 @@
+{
+  "assets": { "upload": "interact" },
+  "db": {
+    "rules": [
+      { "path": "", "read": "view", "write": "owner" },
+      { "path": "registry", "read": "view", "write": "owner" },
+      { "path": "registry/{self}", "write": "interact" },
+      { "path": "data/users", "read": "view", "write": "owner" },
+      { "path": "data/users/{self}", "write": "interact" }
+    ]
+  },
+  "user": { "scopes": ["profile"] }
+}
