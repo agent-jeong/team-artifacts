@@ -6,6 +6,21 @@
 
 Claude 아티팩트 갤러리는 계정마다 따로 있어서, 팀이 계정을 여러 개 쓰면 전체를 한눈에 볼 수 없어요. 이 서랍도 아티팩트 하나예요. 각 계정이 자기 아티팩트 목록을 서랍에 동기화하고, 조직 사람들은 모두 같은 페이지를 열어요.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/ko-overview-dark.png">
+  <img alt="서랍 화면: 왼쪽은 계정과 팀원, 오른쪽은 프로젝트별로 묶은 아티팩트 카드" src="docs/images/ko-overview-light.png">
+</picture>
+
+### 한눈에 보기
+
+![카드를 열고, 담당자별로 묶고, 여러 개를 고르는 모습](docs/images/ko-tour.gif)
+
+| 카드 패널 | 여러 개 고르기 |
+|---|---|
+| ![담당자·상태·공유·프로젝트를 고치는 카드 패널](docs/images/ko-panel.png) | ![여러 카드를 고르고 아래 일괄 변경 막대가 뜬 모습](docs/images/ko-select.png) |
+
+스크린샷의 팀과 아티팩트는 모두 가상의 예시예요.
+
 ## 할 수 있는 것
 
 - **모든 계정을 한 목록으로:** 미리보기가 있는 카드로 보여 주고, 프로젝트·담당자·계정별로 묶거나 검색해요.

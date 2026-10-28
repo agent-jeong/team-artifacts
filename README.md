@@ -6,6 +6,21 @@ One page that gathers the [Claude artifacts](https://claude.ai) your team makes 
 
 Each Claude account only sees its own artifact gallery. If your team works from more than one account, nobody sees the whole picture. This drawer is itself an artifact: every account syncs its artifact list into it, and everyone in your organization opens the same page.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/en-overview-dark.png">
+  <img alt="The drawer: accounts and members on the left, artifact cards grouped by project on the right" src="docs/images/en-overview-light.png">
+</picture>
+
+### A quick tour
+
+![Opening a card, grouping by owner and selecting several cards](docs/images/en-tour.gif)
+
+| Card panel | Selecting many |
+|---|---|
+| ![Card panel with owner, status, sharing and project](docs/images/en-panel.png) | ![Several cards selected with the bulk bar at the bottom](docs/images/en-select.png) |
+
+The screenshots use made-up teams and artifacts.
+
 ## What it does
 
 - **One list for every account**: cards with previews, grouped by project, owner or account, searchable.
