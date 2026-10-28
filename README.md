@@ -9,7 +9,10 @@ Each Claude account only sees its own artifact gallery. If your team works from 
 ## What it does
 
 - **One list for every account**: cards with previews, grouped by project, owner or account, searchable.
-- **Owner, project, status**: assign them one by one or in bulk (pick values, then **Apply**).
+- **Owner, project, status**: assign them one by one or in bulk (pick values, then **Apply**). Bulk changes can be undone for 20 seconds.
+- **Selecting many**: drag across cards, Shift+click for a range, **Select group** on a group header, or ⌘A. Esc ends selection. In a card's panel, ← and → move to the previous or next card.
+- **Finding people**: type a member's name in the search box to see which team they're in. **My name** can also be found by name or team.
+- **Removing**: **Remove from list** hides an artifact and can be restored. In **Show hidden**, **Delete permanently** removes it from the drawer for good (the original artifact is untouched).
 - **Needs attention**: auto-assigned projects to confirm, artifacts only their creator can open, artifacts whose source was deleted.
 - **Connecting accounts**: an invited account presses **Request connection**, and the drawer owner approves it. The owner can also pre-connect accounts from the org directory.
 - **Sync prompt**: each account pastes a prompt (shown in the drawer) into Claude Code to add new artifacts and previews. It only opens artifacts that are new, so re-running it is cheap.
