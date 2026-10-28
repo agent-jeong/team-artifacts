@@ -28,9 +28,10 @@ The screenshots use made-up teams and artifacts.
 - **Selecting many**: drag across cards, Shift+click for a range, **Select group** on a group header, or ⌘A. Esc ends selection. In a card's panel, ← and → move to the previous or next card.
 - **Finding people**: type a member's name in the search box to see which team they're in. **My name** can also be found by name or team.
 - **Removing**: **Remove from list** hides an artifact and can be restored. In **Show hidden**, **Delete permanently** removes it from the drawer for good (the original artifact is untouched).
-- **Needs attention**: auto-assigned projects to confirm, artifacts only their creator can open, artifacts whose source was deleted.
+- **Needs a look**: auto-assigned projects to confirm, private artifacts, artifacts whose sharing hasn't been checked, artifacts whose source was deleted.
 - **Connecting accounts**: an invited account presses **Request connection**, and the drawer owner approves it. The owner can also pre-connect accounts from the org directory.
-- **Sync prompt**: each account pastes a prompt (shown in the drawer) into Claude Code to add new artifacts and previews. It only opens artifacts that are new, so re-running it is cheap.
+- **Sync prompt**: each account pastes one prompt (shown in the drawer) into Claude Code to add new artifacts and keep sharing up to date. Nothing is opened when nothing changed, so running it often is cheap.
+- **Sharing**: set by sync from each source's share settings (it can't be edited in the drawer). Private artifacts are rechecked every 7 days; after turning on sharing, **I turned on sharing** on the card makes the next sync check right away. Other accounts' private artifacts show only their title.
 - **Korean and English**: follows the browser language. Switch with the button at the top.
 
 ## Requirements
@@ -76,7 +77,8 @@ Anyone in your organization with Contributor access can request a connection and
 
 - **Your data stays in your artifact.** This repository contains only the page. Artifacts, members and previews live in the drawer's own database and asset storage.
 - **Status values are stored in Korean** (`진행중`, `완료`, `보관`) whatever the display language. Keep the sync prompt as shown in the drawer.
-- **Previews** are captured for page artifacts only. Docs, designs and slides show an icon.
+- **Previews** are captured for page artifacts only, and only when the syncing session has a tool that can screenshot web pages. Otherwise they're skipped and an icon is shown.
 - **Artifact list limit**: sync reads up to 200 artifacts per account. Beyond that, deleted sources aren't marked as missing.
-- **New artifacts are private by default.** Turn on organization sharing in each artifact's Share menu, or teammates can't open it. The drawer lists these under **Needs attention → Only me**.
+- **New artifacts are private by default.** Turn on organization sharing in each artifact's Share menu, or teammates can't open it. The drawer lists these under **Needs a look → Private**.
+- **Anyone who can open the drawer can read its data.** The page shows only the title of other accounts' private artifacts, but keep sensitive details out of summaries and notes. Sync leaves summaries of private artifacts empty.
 - The page targets artifact runtime contract `0.2.91`. Platform changes may require updates.
